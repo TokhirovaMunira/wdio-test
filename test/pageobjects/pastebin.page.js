@@ -1,4 +1,4 @@
-class secondtask {
+class PastebinPage {
 
     get pastebinLink() {
         return $('(//a[@href="/"]');
