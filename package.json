@@ -16,8 +16,6 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js", 
-        "insta": "wdio run wdio.conf.js --spec test/specs/insta.**.js",
-        "bred": "wdio run wdio.conf.js --spec test/specs/bred.**.js",
         "pastebin": "wdio run wdio.conf.js --spec test/specs/pastebin.**.js",
         "secondtask": "wdio run wdio.conf.js --spec test/specs/secondtask.**.js"
     }
