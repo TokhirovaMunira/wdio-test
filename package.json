@@ -15,9 +15,7 @@
         "wdio-chromedriver-service": "^8.0.0"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js", 
-        "pastebin": "wdio run wdio.conf.js --spec test/specs/pastebin.**.js",
-        "secondtask": "wdio run wdio.conf.js --spec test/specs/secondtask.**.js"
+        "wdio": "wdio run wdio.conf.js",
+        "firsttask": "wdio run wdio.conf.js --spec test/specs/firsttask.**.js"
     }
 }
-
