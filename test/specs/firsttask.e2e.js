@@ -97,6 +97,18 @@ describe('firsttask', () => {
         await FirstTaskPage.waitFor(3);
         // кликает на Add To Estimate
         await FirstTaskPage.clickaddToEstimate();
+        // проверяет правильно ли написан текст
+        await FirstTaskPage.verifyProvisioningModelText();
+        // проверяет правильно ли написан текст
+        await FirstTaskPage.verifyInstanceTypeText();
+        // проверяет правильно ли написан текст
+        await FirstTaskPage.verifyRegionText();
+        // проверяет правильно ли написан текст
+        await FirstTaskPage.verifylocalSSDText();
+        //проверяет правильно ли написан текст
+        await FirstTaskPage.verifyCommitmentTermText();
+        // проверяет итоговую сумму
+        await FirstTaskPage.verifyEstimatedCost();
 
     });
 });

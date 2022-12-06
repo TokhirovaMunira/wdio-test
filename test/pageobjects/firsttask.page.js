@@ -274,7 +274,65 @@ class FirstTaskPage {
         await this.addToEstimate.click();
     }
 
+    get ProvisioningModelText() {
+        return $("//div[contains(text(),'Provisioning model')]");
+    }
 
+    async verifyProvisioningModelText() {
+        let text = await this.ProvisioningModelText.getText();
+        let result = text.includes('Regular');
+        expect(result).toBe(true);
+    }
+
+    get InstanceTypeText() {
+        return $("//div[contains(text(),'Instance type')]");
+    }
+
+    async verifyInstanceTypeText() {
+        let text = await this.InstanceTypeText.getText();
+        let result = text.includes('n1-standard-8');
+        expect(result).toBe(true);
+    }
+
+    get RegionText() {
+        return $("//div[contains(text(),'Region')]");
+    }
+
+    async verifyRegionText() {
+        let text = await this.RegionText.getText();
+        let result = text.includes('Frankfurt');
+        expect(result).toBe(true);
+    }
+
+    get localSSDText() {
+        return $("//div[contains(text(),'Local SSD')]");
+    }
+
+    async verifylocalSSDText() {
+        let text = await this.localSSDText.getText();
+        let result = text.includes(' 2x375 GiB');
+        expect(result).toBe(true);
+    }
+
+    get CommitmentTermText() {
+        return $("//div[contains(text(),'Commitment term')]");
+    }
+
+    async verifyCommitmentTermText() {
+        let text = await this.CommitmentTermText.getText();
+        let result = text.includes('1 Year');
+        expect(result).toBe(true);
+    }
+
+    get totalEstimatedCost() {
+        return $("//*[contains(text(),'Total Estimated Cost')]");
+    }
+
+    async verifyEstimatedCost() {
+        let text = await this.totalEstimatedCost.getText();
+        let result = text.includes('USD 6,207.89 per 1 month');
+        expect(result).toBe(true);
+    }
 
 }
 
