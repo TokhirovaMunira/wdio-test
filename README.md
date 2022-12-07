@@ -8,6 +8,7 @@ To run the tests, enter the following commands in the terminal:
 
 ```
 npm run google1
+npm run google2
 npm run pastebin1
 npm run pastebin2
 ```

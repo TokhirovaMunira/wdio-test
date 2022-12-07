@@ -18,6 +18,7 @@
         "wdio": "wdio run wdio.conf.js",
         "google1": "wdio run wdio.conf.js --spec test/specs/firsttask.**.js",
         "pastebin1": "wdio run wdio.conf.js --spec test/specs/pastebin.**.js",
-        "pastebin2": "wdio run wdio.conf.js --spec test/specs/secondtask.**.js"
+        "pastebin2": "wdio run wdio.conf.js --spec test/specs/secondtask.**.js",
+        "google2": "wdio run wdio.conf.js --spec test/specs/google2.**.js"
     }
 }
